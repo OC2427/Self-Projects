@@ -424,6 +424,7 @@ public class SENTENCE_PATTERN{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word : ");
         String WORD = sc.nextLine(); 
+        System.out.println("\n");
         RenderBanner(WORD.toUpperCase());
     }
 }
