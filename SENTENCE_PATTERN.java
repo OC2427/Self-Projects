@@ -402,6 +402,61 @@ public class SENTENCE_PATTERN{
 "**     ** ",
 " *******  "
         });
+        patternMap.put('.', new String[]{
+"         ",
+"         ",
+"         ",
+"         ",
+"         ",
+"         ",
+"   ***   ",
+"  *****  ",
+"   ***   "
+        });
+        patternMap.put(',', new String[]{
+"        ",
+"        ",
+"        ",
+"        ",
+"        ",
+"    **  ",
+"   **** ",
+"    **  ",
+"   **   "
+        });
+        patternMap.put('-', new String[]{
+"        ",
+"        ",
+"        ",
+"        ",
+" ****** ",
+" ****** ",
+"        ",
+"        ",
+"        "
+        });
+        patternMap.put('+', new String[]{
+"        ",
+"        ",
+"   **   ",
+"   **   ",
+" ****** ",
+" ****** ",
+"   **   ",
+"   **   ",
+"        "
+        });
+        patternMap.put('?', new String[]{
+"  *****  ",
+" **   ** ",
+" **   ** ",
+"     **  ",
+"    **   ",
+"    **   ",
+"         ",
+"    **   ",
+"    **   "
+        });
     }
     public static void RenderBanner(String word){
         String[] words = word.split(" ");
@@ -423,7 +478,7 @@ public class SENTENCE_PATTERN{
         loadPatterns();
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the word : ");
-        String WORD = sc.nextLine(); 
+        String WORD = sc.nextLine();
         System.out.println("\n");
         RenderBanner(WORD.toUpperCase());
     }
